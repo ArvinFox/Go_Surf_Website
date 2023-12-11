@@ -1,0 +1,106 @@
+.login-tooltip {
+  position: absolute;
+  bottom: -25px;
+  pointer-events: none;
+  opacity: 0;
+  white-space: nowrap;
+
+  transition: opacity 0.15s;
+
+  background-color: black;
+  color: white;
+  font-size: 12px;
+
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+.user-tooltip a {
+  margin: 0;
+  text-align: center;
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+.user-tooltip a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f43434;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.user-tooltip a:hover::after {
+  width: 100%;
+}
+
+.user-link:hover .login-tooltip {
+  opacity: 1;
+}
+
+.user-image-container {
+  position: relative;
+}
+
+.user-image-container i {
+  position: absolute;
+  font-size: 20px;
+  color: #dfe2e8b3;
+  left: 52%;
+  top: -21.7%;
+}
+
+.user {
+  position: absolute;
+  top: 132%;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+  margin-left: -200%;
+  margin-right: 100%;
+  background-color: #dfe2e8b3;
+  border-radius: 20px;
+  padding: 10px 10px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.user-tooltip {
+  white-space: nowrap;
+  transition: opacity 0.15s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.user-link:hover .user {
+  opacity: 1;
+}
+
+@media (max-width: 910px) {
+  .user {
+    margin-left: 0%;
+    margin-right: auto;
+    padding: 18px 30px;
+    top: 134%;
+  }
+
+  .user-tooltip {
+    white-space: wrap;
+  }
+
+  .user-link .user-image-container a {
+    font-size: 14px;
+  }
+
+  .user-image-container i {
+    top: -16.5%;
+    left: 11%;
+  }
+}
