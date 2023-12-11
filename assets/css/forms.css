@@ -1,0 +1,115 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../surf_img/login-background.jpg);
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.form {
+  padding: 16px;
+  margin: 15px auto;
+  width: 500px;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+}
+
+input[type=email],
+input[type=password] {
+  width: 100%;
+  padding: 10px 17px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #eaeaea;
+}
+
+input[type=text],
+input[type=tel],
+.dropdown {
+  width: 49.5%;
+  padding: 10px 17px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #eaeaea;
+}
+
+input[type=radio] {
+  display: inline-block;
+  margin: 20px 20px;
+}
+
+#button {
+  background-color: #3c00a0;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 25%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+#button:hover {
+  background-color: rgb(50, 0, 129);
+}
+#button:active {
+  opacity: 0.7;
+}
+
+.btn {
+  text-align: center;
+}
+
+h1 {
+  padding-top: 0;
+  text-align: center;
+  color: black;
+}
+
+/* signup form password verification  */
+#message {
+  font-size: 14px;
+  margin: 15px 0;
+  display: inline-block;
+  color: red;
+  padding: 5px 20px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* login form error messages */
+.error {
+  color: red;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: #f0f0f0;
+}
+
+@media(max-width: 900px) {
+  .form {
+    font-size: 12px;
+    width: fit-content;
+  }
+}
+
+@media(max-width: 700px) {
+  .form {
+    font-size: 11px;
+    width: fit-content;
+  }
+}
