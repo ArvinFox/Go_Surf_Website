@@ -1,0 +1,1 @@
+create the database name as "go_surf_sri_lanka". Then import it.
